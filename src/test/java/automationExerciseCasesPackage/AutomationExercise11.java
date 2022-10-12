@@ -22,7 +22,7 @@ public class AutomationExercise11 extends TestBaseBeforeAfter {
 
         // 5. Scroll down to footer
         WebElement footerWE = driver.findElement(By.xpath("//div[@class='footer-widget']"));
-        actions.scrollToElement(footerWE).perform();
+        actions.moveToElement(footerWE).perform();
 
         // 6. Verify text 'SUBSCRIPTION'
         Assert.assertTrue(driver.findElement(By.xpath("//h2[text()='Subscription']")).isDisplayed());

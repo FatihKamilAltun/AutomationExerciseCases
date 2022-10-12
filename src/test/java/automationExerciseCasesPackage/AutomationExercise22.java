@@ -16,7 +16,7 @@ public class AutomationExercise22 extends TestBaseBeforeAfter {
 
         // 3. Scroll to bottom of page
         WebElement allRightsText=driver.findElement(By.xpath("//*[text()='Copyright © 2021 All rights reserved']"));
-        actions.scrollToElement(allRightsText).perform();
+        actions.moveToElement(allRightsText).perform();
 
         // 4. Verify 'RECOMMENDED ITEMS' are visible
         Assert.assertTrue(driver.findElement(By.xpath("//*[text()='recommended items']")).isDisplayed());

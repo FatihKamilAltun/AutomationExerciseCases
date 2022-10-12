@@ -131,5 +131,8 @@ public class AutomationExercise14 extends TestBaseBeforeAfter {
 
         // 20. Verify 'ACCOUNT DELETED!' and click 'Continue' button
             // "The delete site is broken"
+
+        // 21. Close the browser
+        driver.close();
     }
 }

@@ -19,7 +19,7 @@ public class AutomationExercise17 extends TestBaseBeforeAfter {
 
         // 4. Add products to cart
         WebElement greenProduct = driver.findElement(By.xpath("(//div[@class='productinfo text-center'])[8]"));
-        actions.scrollToElement(greenProduct).sendKeys(Keys.ARROW_DOWN, Keys.ARROW_DOWN, Keys.ARROW_DOWN).perform();
+        actions.moveToElement(greenProduct).sendKeys(Keys.ARROW_DOWN, Keys.ARROW_DOWN, Keys.ARROW_DOWN).perform();
         Thread.sleep(1500);
         actions.moveToElement(greenProduct).perform();
         Thread.sleep(1500);
@@ -27,7 +27,7 @@ public class AutomationExercise17 extends TestBaseBeforeAfter {
         driver.findElement(By.xpath("//*[text()='Continue Shopping']")).click();
 
         // 5. Click 'Cart' button
-        actions.scrollToElement(driver.findElement(By.xpath("//*[text()=' Cart']"))).perform();
+        actions.moveToElement(driver.findElement(By.xpath("//*[text()=' Cart']"))).perform();
         Thread.sleep(1500);
         driver.findElement(By.xpath("//*[text()=' Cart']")).click();
 

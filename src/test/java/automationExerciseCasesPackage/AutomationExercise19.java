@@ -19,7 +19,7 @@ public class AutomationExercise19 extends TestBaseBeforeAfter {
 
         // 4. Verify that Brands are visible on left side bar
         WebElement brandsBar=driver.findElement(By.xpath("//div[@class='brands_products']"));
-        actions.scrollToElement(brandsBar);
+        actions.moveToElement(brandsBar);
 
         // 5. Click on any brand name
         actions.sendKeys(Keys.PAGE_DOWN).perform();

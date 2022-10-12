@@ -41,7 +41,7 @@ public class AutomationExercise21 extends TestBaseBeforeAfter {
 
         // 8. Click 'Submit' button
         WebElement submitButton = driver.findElement(By.xpath("//button[@id='button-review']"));
-        actions.scrollToElement(submitButton).click(submitButton).perform();
+        actions.moveToElement(submitButton).click(submitButton).perform();
 
         // 9. Verify success message 'Thank you for your review.'
         Assert.assertTrue(driver.findElement(By.xpath("//*[text()='Thank you for your review.']")).isDisplayed());
